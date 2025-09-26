@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    background-color: #e2d0ff;
+}
+button{
+    margin-top: 24px;
+    background-color: rgb(106, 243, 79);
+}
+h1{
+    margin-top: 200px;
+    margin-bottom: 32px;
+}
+
+
