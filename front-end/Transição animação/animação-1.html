@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação 01</title>
+    <style>
+        .caixa{
+            background-color: #fff;
+            width: 150px;
+            padding: 30px;
+            border: solid thin #000000;
+        }
+        /*Animação - WebKit!!!*/
+        @-webkit-keyframes anime{
+            from{
+                width: 150px;
+                background: #fff;
+            }
+            to{
+                width: 400px;
+                background: #8c232c;
+            }
+        }
+        .animeGo{
+            -webkit-animation: 3s;
+            -webkit-animation-name: anime;
+            -webkit-animation-timing-function: ease;
+            -webkit-animation-delay: .5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state: running;
+        }
+        .animeGo{
+            animation-name: anime;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: .5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        /* Animação - padrão */
+        @keyframes anime{
+            from{
+                width: 150px;
+                background: #fff;
+            }
+            to{
+                width: 400px;
+                background: #8c232c;
+            }
+        }
+
+        .animeGo{
+            animation-name: anime;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: .5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transições e animações</h1>
+    <h2>Animação 01</h2>
+    <div class="caixa">Estado Inicial</div>
+    <div class="caixa animeGo">Estado Final</div>
+</body>
+
+</html>
