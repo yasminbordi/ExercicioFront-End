@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseOver</title>
+</head>
+<body>
+    <h2 id="Título" onmouseover="mudarCor()" onmouseout="voltarCor()">Passe o mouse aqui!</h2>
+    <script>
+        function mudarCor() {
+            document.getElementById("Título").style.color = "red";
+        }
+        function voltarCor() {
+            document.getElementById("Título").style.color = "black";
+        }
+    </script>
+    
+</body>
+</html>
